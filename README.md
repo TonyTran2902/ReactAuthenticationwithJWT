@@ -78,7 +78,8 @@ IA04/
 1. Deploy the API (e.g., Render, Railway, Fly.io, or a simple VPS) and provide the production MongoDB URI (Atlas recommended).
 2. Update the client's `VITE_API_URL` with the deployed API base (e.g., `https://api.yourapp.com/api`).
 3. Build the client with `npm run build` and deploy the `dist/` folder to Netlify, Vercel, or GitHub Pages.
-4. Confirm the **Hosted URL** entries above stay in sync with any redeployments (Vercel for the client, Render for the API).
+4. The `client/vercel.json` rewrite ensures deep links (e.g., `/login`) fall back to `index.html` on Vercel; re-upload this file if you reconfigure the project.
+5. Confirm the **Hosted URL** entries above stay in sync with any redeployments (Vercel for the client, Render for the API).
 
 ## Testing the Flow
 
