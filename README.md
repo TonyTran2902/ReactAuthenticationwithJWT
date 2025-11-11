@@ -2,7 +2,8 @@
 
 Full-stack authentication sample that satisfies the IA04 requirements: Vite + React on the client, Express + MongoDB on the API, JWT access & refresh tokens, Axios interceptors, React Query for server state, and React Hook Form for validation.
 
-> **Hosted URL:** _(Add your deployment link here once you deploy to Netlify/Vercel/etc.)_
+> **Live Frontend:** https://react-authenticationwith-jwt.vercel.app/  
+> **Hosted API:** https://reactauthenticationwithjwt.onrender.com (base URL already configured in the deployed client)
 
 ## Stack
 
@@ -77,7 +78,7 @@ IA04/
 1. Deploy the API (e.g., Render, Railway, Fly.io, or a simple VPS) and provide the production MongoDB URI (Atlas recommended).
 2. Update the client's `VITE_API_URL` with the deployed API base (e.g., `https://api.yourapp.com/api`).
 3. Build the client with `npm run build` and deploy the `dist/` folder to Netlify, Vercel, or GitHub Pages.
-4. Update the **Hosted URL** entry above once deployed so graders can verify the live demo.
+4. Confirm the **Hosted URL** entries above stay in sync with any redeployments (Vercel for the client, Render for the API).
 
 ## Testing the Flow
 
